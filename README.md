@@ -3,7 +3,7 @@ Group project using Python to retrieve, process, and visualize data from public 
 
 This repository contains Python API projects completed by each group member. Each project uses a different public API to retrieve data, process selected information, and display the results in a useful way.
 
-Kiara Baker — iNaturalist API
+# Kiara Baker — iNaturalist API
 
 Project: Seasonal Patterns in Amphibian Observations
 
@@ -25,7 +25,7 @@ Visualization of the most frequently represented species in a sample of observat
 
 Notebook: Kiara_iNaturalist_Amphibians.ipynb
 
-Alex Blochel — API
+# Alex Blochel — API
 
 Project: To be added
 
