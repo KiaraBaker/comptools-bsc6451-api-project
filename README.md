@@ -11,22 +11,27 @@ This project uses the iNaturalist API to retrieve amphibian observation data fro
 
 The analysis includes:
 
-Retrieval of data using the iNaturalist API
+- Retrieval of data using the iNaturalist API
+- Processing and organization of API data with pandas
+- Monthly amphibian observation totals for 2025
+- Visualization of seasonal observation patterns
+- Extraction of species-level taxonomic information
+- Visualization of the most frequently represented species in a sample of observations
 
-Processing and organization of API data with pandas
+Notebook: `Kiara_iNaturalist_Amphibians.ipynb`
 
-Monthly amphibian observation totals for 2025
+# Alex Blochel — eBird API
 
-Visualization of seasonal observation patterns
+Project: Wood Stork Observation Patterns
 
-Extraction of species-level taxonomic information
+This project uses the eBird API to retrieve recent Wood Stork (*Mycteria americana*) observations. The analysis explores where Wood Storks have been reported across the southeastern United States and organizes the returned records into structured pandas DataFrames for further analysis.
 
-Visualization of the most frequently represented species in a sample of observations
+The project includes:
 
-Notebook: Kiara_iNaturalist_Amphibians.ipynb
+- Secure eBird API key setup using an environment variable or hidden prompt
+- Retrieval of recent Wood Stork observations from the eBird API
+- Comparison of observation counts across selected southeastern states
+- Processing of observation dates, locations, state codes, and reported bird counts
+- Visualizations showing recent Wood Stork observation patterns in graphs and map
 
-# Alex Blochel — API
-
-Project: To be added
-
-This section will contain Alex's API Project :D
+Notebook: `Blochel_eBird_wost.ipynb`
