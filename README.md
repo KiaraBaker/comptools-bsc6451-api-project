@@ -28,10 +28,26 @@ This project uses the eBird API to retrieve recent Wood Stork (*Mycteria america
 
 The project includes:
 
-- Secure eBird API key setup using an environment variable or hidden prompt
+- Secure eBird API key setup using a `.env` file loaded by `python-dotenv`, an environment variable, or a hidden prompt
 - Retrieval of recent Wood Stork observations from the eBird API
 - Comparison of observation counts across selected southeastern states
 - Processing of observation dates, locations, state codes, and reported bird counts
 - Visualizations showing recent Wood Stork observation patterns in graphs and map
 
 Notebook: `Blochel_eBird_wost.ipynb`
+
+## eBird API key setup
+
+Install the project dependencies with:
+
+```bash
+pip install -r requirements.txt
+```
+
+Copy `.env.example` to `.env` and replace the placeholder with your eBird API key:
+
+```text
+EBIRD_API_KEY=your_ebird_api_key_here
+```
+
+The notebook loads `.env` with `python-dotenv`. `.env` is excluded by `.gitignore`, so the real API key is not committed to the repository. Never paste the actual key into the notebook or `.env.example`.
