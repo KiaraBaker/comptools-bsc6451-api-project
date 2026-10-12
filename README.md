@@ -44,10 +44,18 @@ Install the project dependencies with:
 pip install -r requirements.txt
 ```
 
-Copy `.env.example` to `.env` and replace the placeholder with your eBird API key:
+The notebook currently looks for `.env.example` in the repository folder and reads
+the `EBIRD_API_KEY` value from that file:
 
-```text
+```bash
 EBIRD_API_KEY=your_ebird_api_key_here
 ```
 
-The notebook loads `.env` with `python-dotenv`. `.env` is excluded by `.gitignore`, so the real API key is not committed to the repository. Never paste the actual key into the notebook or `.env.example`.
+If `.env.example` is not present, the notebook prompts for the key with hidden
+input. Install the dependencies, then run the setup cell before running the API
+request cells.
+
+The repository's `.gitignore` excludes `.env` files, but `.env.example` is
+allowed to be tracked. Never commit a real API key, paste it into the notebook,
+or store it in `.env.example`; use the placeholder shown above when sharing the
+repository.
