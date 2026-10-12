@@ -1,0 +1,5 @@
+folium
+matplotlib
+pandas
+python-dotenv
+requests
